@@ -1,0 +1,56 @@
+.animate-vivus-automatic{
+  height: 300px;
+}
+
+.animate-css {
+  width: 300px;
+}
+
+.animate-css svg{
+  stroke-width: 2px;
+  stroke: blue;
+  width: 100%;
+  height: 100%
+  stroke-dashoffset:700;
+  stroke-dasharray: 70;
+  animation: animate 3s ease-in-out forwards infinite;
+}
+
+@keyframes animate {
+  0% {
+    stroke-dashoffset:40;
+  }
+  70% {
+    stroke-dashoffset:0;
+  }
+  100%{
+    stroke-dashoffset:0;
+  }
+}
+
+.animate-html-css {
+  width: 300px;
+  height: 100px;
+  border-right: 2px solid blue;
+  animation: animatedois 3s ease-in-out forwards infinite;
+/* transition-property: height width transform;
+ transition-duration: 0.1s 0.1s 0.1s;
+ transition-timing-function: linear linear linear;
+ transition-delay: 0 0.2s 0;
+ transform: translateY(0);
+  width: 300px;
+  height: 100px;
+  border: blue;*/
+}
+
+@keyframes animatedois {
+  0% {
+    border-bottom: 2px solid red;
+  }
+  70% {
+    border-left: 2px solid red;
+  }
+  100%{
+    border-top: 2px solid red;
+  }
+}
